@@ -1,0 +1,28 @@
+
+
+body {
+  background-color: blue;
+  color: #0f0;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;    
+  justify-content: flex-start; 
+  padding-left: 40px;       
+}
+
+span {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+
+span a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+span a:hover {
+  cursor: pointer;
+}
