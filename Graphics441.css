@@ -1,22 +1,21 @@
-
-
 body {
   background-color: blue;
   color: #0f0;
   font-family: 'Press Start 2P', monospace;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;    
   justify-content: flex-start; 
-  padding-left: 40px;       
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
 span {
-  font-size: 28px;
+  font-size: clamp(18px, 5vw, 28px);
   line-height: 1.5;
+  word-break: break-word;
 }
-
 
 span a {
   color: inherit;
@@ -25,4 +24,33 @@ span a {
 
 span a:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  
+  span {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  
+  span {
+    font-size: clamp(14px, 6vw, 18px);
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
 }
